@@ -1,0 +1,44 @@
+.Scroll {
+
+    position : absolute;
+    z-index : 2;
+    right : 28px;
+    bottom : 28px;
+    writing-mode : vertical-rl;
+    font-size : 12px;
+    letter-spacing : .14em;
+    text-transform : uppercase;
+    color : white;
+    display : flex;
+    align-items : center;
+    gap : 10px;
+
+} .Scroll::after {
+
+    content : '';
+    width : 1px;
+    height : 46px;
+    background : #f7f3ea;
+    transform-origin : top;
+    animation : linea 2s ease-in-out infinite;
+
+} @keyframes linea {
+
+    0% {
+
+        transform : scaleY(0);
+        transform-origin : top;
+
+    } 50% {
+
+        transform : scaleY(1);
+        transform-origin : top;
+
+    } 100% {
+
+        transform : scaleY(0);
+        transform-origin : bottom;
+
+    }
+
+}

@@ -1,0 +1,19 @@
+.Contacto {
+
+    padding : 6px 24px;
+    border : 1px solid crimson;
+    background : linear-gradient(to right, #7a0c1e, #b3122e);
+    cursor : pointer;
+
+} .Contacto:hover {
+
+    background : linear-gradient(to right, #b3122e, #7a0c1e);
+
+} .Contacto a {
+
+    color : #f1e6d0;
+    font-size : 16px;
+    font-weight : 700;
+    text-decoration : none;
+
+}
